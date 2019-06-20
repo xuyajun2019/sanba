@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <title>绽放美丽，只“因”有你</title>
+</head>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"> </script>
+<script src="./static/lib/js/jquery-2.1.4.js"></script>
+<script src="./static/lib/js/TweenMax.min.js"></script>
+<script src="./static/lib/js/dt_wechatAuth.js"></script>
+<script src="./static/lib/js/share.js"></script>
+<script src="./static/lib/js/rem.js"></script>
+<script src="./assets/components/global.js"></script>
+
+<body>
+  <div id="app"></div>
+
+  <!-- built files will be auto injected -->
+  <!-- <div id="homeLoading"> -->
+  <!-- <img class="load" src="http://shareserver.dwechat.com/ILMN1902/release/img/p1/DNA.png"/> -->
+  <!-- <div class="loadP">加载中...</div> -->
+  </div>
+  <style>
+    #homeLoading {
+      /* background: url(http://fmcc1912cdn.dwechat.com/H5/release/imgs/p5/load1.png) no-repeat; */
+      background: #26BEC9;
+      background-size: 100% 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #fff;
+      height: 100%;
+      width: 100%;
+      z-index: 500000;
+      text-align: center;
+    }
+
+    .load {
+      position: absolute;
+      height: 2.6rem;
+      width: 2.6rem;
+      top: 28%;
+      /* left: 51%;
+    transform: translateX(-50%); */
+      margin-top: -1.3rem;
+
+
+      animation: myfirst 3s infinite;
+      -moz-animation: myfirst 3s infinite;
+      -webkit-animation: myfirst 3s infinite;
+      -o-animation: myfirst 3s infinite;
+      margin-left: -6%;
+    }
+
+    .loadP {
+      position: absolute;
+      top: 28%;
+      margin-top: 2rem;
+      font-size: 18px;
+      text-align: center;
+      width: 100%
+    }
+
+    @keyframes myfirst {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      50% {
+        transform: rotate(180deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+  </style>
+
+</body>
+<!-- <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      // hm.src = "https://hm.baidu.com/hm.js?2cb1eb14675fed9b779ef5eab8810435";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script> -->
+<script>
+  //分享
+  //  function checkLeave() {
+  // console.log("refreshed");
+  //window.location.href.split("#")[0]
+  // window.location.href = "http://shareserver.dwechat.com/ILMN1902/release/index.html";
+  // };
+
+  // 获取昵称
+  // var wechatAuth = new WECHATAUTH('http://fmcc1803.dwechat.com');
+  // 		wechatAuth.onReady(function(res) {
+  //       // console.log("555555555555555555555555555555555555555555555%c res", "color: pink", res);
+  //       var name=res.Data.Nickname;
+  //       console.log(name);
+  //       $(".name").html(name);
+  // 		})
+  // 获取昵称
+
+
+
+
+
+
+
+
+
+
+  // var wechatShare = new _SHARE();
+  //     var prizeName = window.localStorage.getItem('prizeName2') || "";
+  // //		var prizeName= "小熊";
+  //     if(prizeName == ""){
+  //   	var prizeNames = "这个新年有新玩法!";
+  //     }else{
+  //     	var prizeNames = "我在刷蓝包时获得费森尤斯定制"+prizeName;
+  //     }
+  // wechatShare.registerFunc('commonShare', function () {
+  // wx.onMenuShareAppMessage({
+  // title: '绽放美丽，只“因”有你', // 分享标题
+  // desc: "让我们健康不将就！来挑战吧！", // 分享描述
+  // link: "http://shareserver.dwechat.com/ILMN1902/release/index.html", // 分享链接
+  // imgUrl: "http://shareserver.dwechat.com/ILMN1902/release/img/p1/fenxiang.jpg", // 分享图标
+  // success: function () {
+  // 	console.log(prizeNames);
+  // }
+  // });
+  // wx.onMenuShareTimeline({
+  // title: '绽放美丽，只“因”有你', // 分享标题
+  // desc: "让我们健康不将就！来挑战吧！", // 分享描述
+  // link: "http://shareserver.dwechat.com/ILMN1902/release/index.html", // 分享链接
+  // imgUrl: "http://shareserver.dwechat.com/ILMN1902/release/img/p1/fenxiang.jpg", // 分享图标
+  // success: function () {
+
+  // }
+  // });
+  // })
+  // wechatShare.onReady(function () {
+  //   wechatShare.invokeFunc('commonShare')();
+  //   })
+
+</script>
+
+</html>
